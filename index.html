@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html><head>
+	<title>Lots of luv</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abel">
+</head>
+	<body onload="startTime()" data-gr-c-s-loaded="true">
+		<center>
+		<br>
+		<br>
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1 id="main">...</h1>
+	<div id="clock">...</div>
+	<a href="https://www.instagram.com/kinanke2/" id="down">you're so lovely <3 </a>
+
+<style type="text/css">
+	
+	#clock{
+		color: #ffff;
+		font-size: 64px;
+		margin-top: 100px;
+		font-family: Product Sans;
+	}
+
+	#down{
+		color: #fffff;
+    font-family: Product Sans;
+    }
+
+a{
+  color:#fff;
+}
+a:hover{color:red}
+h1{
+  font-family: 'Lora', serif;
+  color:#fff;
+  white-space: nowrap;
+	overflow: hidden;
+	width: 30em;
+  animation: vubon 7s infinite;
+  margin:0 auto;
+}
+
+@keyframes vubon{ 
+  from { width: 0; } 
+} 
+
+/* Chrome, Safari, Opera */ 
+@-webkit-keyframes vubon {
+  from { width: 0; } 
+}
+	ul{
+		margin: 0px; left:9%;
+		padding: 0px;
+		display: flex;
+		position: absolute;
+	}
+
+	body {
+  background-image: linear-gradient(to right, #B666D3 , #D991EE);
+}
+
+	#main{
+		color:;
+    text-shadow: 4px 2px 4px #000000;
+		font-size:50px;
+		font-family: Product Sans; 
+	}
+
+</style>
+<script type="text/javascript">
+
+var nama = "Kinan!"
+
+function startTime() {
+	var today = new Date();
+	var h = today.getHours();
+	var m = today.getMinutes();
+	var s = today.getSeconds();
+	m = checkTime(m);
+	s = checkTime(s);
+	document.getElementById("clock").innerHTML = h+":"+m+":"+s;
+	if (h < 12) {
+		document.getElementById("main").innerHTML = "Semangat PJJnya,  "+nama
+	} else if (h < 16) {
+		document.getElementById("main").innerHTML = "Jangan lupa belajar, "+nama
+	} else if (h < 18) {
+		document.getElementById("main").innerHTML = "Sunsetnya cantik, tapi ga secantik " +nama
+	} else if (h < 20) {
+		document.getElementById("main").innerHTML = "Tidur jangan malem-malem heh, "+nama
+	} else {document.getElementById("main").innerHTML = "Sweet Dreams, kin. Nite nite! &#128151";}
+	var t = setTimeout(function(){startTime()},999);
+}
+
+
+function checkTime(h) {
+    if (h<10) {h = "0" + h};  // add zero in front of numbers < 10
+    return h;
+}
+</script>
+
+	<!-- function startTime() {
+    var today=new Date();
+    var h=today.getHours();
+    var m=today.getMinutes();
+    var s=today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('jam').innerHTML = h+":"+m+":"+s;
+    var t = setTimeout(function(){startTime()},9999); -->	</center></body></html>
