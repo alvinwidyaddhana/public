@@ -21,7 +21,7 @@
 		<br>
 		<h1 id="main">...</h1>
 	<div id="clock">...</div>
-	<a href="https://www.instagram.com/kinanke2/" id="down">you're so lovely <3 </a>
+	<a href="https://www.instagram.com/chocorine_/" id="down">you're so lovely <3 </a>
 
 <style type="text/css">
 	
@@ -66,6 +66,56 @@ h1{
 		position: absolute;
 	}
 
+	ul li{
+		margin: 0px 45px;
+		width: 75px;
+		height: 75px;
+		list-style: none;
+		background: #ffffff;
+		border-radius: 50%;
+		animation: animate 2s linear infinite;
+	}
+
+	@keyframes animate {
+		0%
+		{
+			transform: translateY(0px);
+		}
+		25%
+		{
+			transform: translateY(20px);
+		}
+		50%
+		{
+			transform: translateY(-20px);
+		}
+		75%
+		{
+			transform: translateY(20px);
+		}
+		100%
+		{
+			transform: translateY(0px);
+		}
+
+	}
+
+	ul li:nth-child(1){
+		animation-delay: 0s;
+	}
+	ul li:nth-child(2){
+		animation-delay: 0.4s;
+	}
+	ul li:nth-child(3){
+		animation-delay: 0.8s;
+	}
+	ul li:nth-child(4){
+		animation-delay: 1.2s;
+	}
+	ul li:nth-child(5){
+		animation-delay: 1.6s;
+	}
+
 	body {
   background-image: linear-gradient(to right, #B666D3 , #D991EE);
 }
@@ -98,7 +148,7 @@ function startTime() {
 		document.getElementById("main").innerHTML = "Sunsetnya cantik, tapi ga secantik " +nama
 	} else if (h < 20) {
 		document.getElementById("main").innerHTML = "Tidur jangan malem-malem heh, "+nama
-	} else {document.getElementById("main").innerHTML = "Sweet Dreams, kin. Nite nite! &#128151";}
+	} else {document.getElementById("main").innerHTML = "Sweet Dreams, kin. Nite nite!";}
 	var t = setTimeout(function(){startTime()},999);
 }
 
